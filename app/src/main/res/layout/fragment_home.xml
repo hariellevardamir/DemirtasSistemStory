@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/storyImage"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <pt.tornelas.segmentedprogressbar.SegmentedProgressBar
+        android:id="@+id/spb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:segmentBackgroundColor="@color/gray"
+        app:segmentCornerRadius="2dp"
+
+        app:segmentMargins="@dimen/default_segment_margin"
+        app:segmentSelectedBackgroundColor="@color/white"
+        app:segmentSelectedStrokeColor="@android:color/black"
+        app:segmentStrokeColor="@android:color/black"
+        app:segmentStrokeWidth="1dp"
+        app:timePerSegment="8000"
+        app:totalSegments="10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
